@@ -84,7 +84,7 @@ Desde la raíz del proyecto, compile y ejecute con Maven:
 
 ## 📡 Endpoints Principales (API REST)
 
-La API cuenta con validación de datos (`@Valid`) y manejo centralizado de excepciones que retorna códigos de estado HTTP semánticos (400, 404, 422).
+La API cuenta con validación de datos (`@Valid`) y manejo centralizado de excepciones que retorna códigos de estado HTTP semánticos (400, 401, 404 y 500).
 
 ### 1. Suscribirse a un Fondo
 * **URL:** `POST /api/v1/fondos/suscribir`
