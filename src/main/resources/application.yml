@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: btg-fondos
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://cognito-idp.us-east-1.amazonaws.com/us-east-1_XXXXXXX
+
+aws:
+  region: us-east-1
+  dynamodb:
+    endpoint: http://localhost:8000   # DynamoDB local para desarrollo
+    table-clientes: btg-clientes
+    table-fondos: btg-fondos
+    table-transacciones: btg-transacciones
+  sns:
+    topic-notificaciones: arn:aws:sns:us-east-1:000000000000:btg-notificaciones
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
